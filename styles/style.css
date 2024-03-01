@@ -1,0 +1,42 @@
+* {
+
+}
+
+.banner {
+    background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* width: 100%;
+    margin: 0 auto; */
+    background-position: center;
+}
+
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.Popular {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.Destination-img div{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.Destination-img img{
+    width: 100%;
+}
+
+.Newsletter {
+    display: flex;
+}
+
+footer {
+    background-color: #f3f3f3;
+    text-align: center;
+}
