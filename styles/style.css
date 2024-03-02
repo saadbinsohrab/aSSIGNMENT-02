@@ -1,14 +1,97 @@
+:root {
+    --p-coolor: #FF5400;
+}
+
 * {
 
 }
 
+h1{
+    font-size: 3rem;
+    margin: 15px 0;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: gray;
+}
+li {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+nav h1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+nav span {
+    color: var(--p-coolor);
+}
+
+nav, nav ul,  nav a {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul, nav a {
+}
+
 .banner {
     background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    margin: 0 auto;
     height: 100vh;
     background-repeat: no-repeat;
-    /* width: 100%;
-    margin: 0 auto; */
     background-position: center;
+    text-align: center;
+}
+
+.b-text {
+    padding-top: 200px;
+    color: white;
+}
+.banner-title {
+    font-size: 5rem;
+    margin: 30px 0;
+}
+
+.banner-describe {
+    color: white;
+}
+
+.banner input {
+    font-size: 1rem;
+    /* font-weight: bold; */
+    color: white;
+    /* background-color: var(--p-coolor); */
+    border: 0;
+    padding: 20px 35px;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--p-coolor);
+    border: 0;
+    padding: 20px 35px;
+    border-radius: 10px;
+
 }
 
 main {
@@ -18,11 +101,15 @@ main {
 
 
 .Popular {
+    margin: 100px 0;
     display: flex;
-    gap: 10px;
+    gap: 50px;
     align-items: center;
 }
 
+.Destination {
+    text-align: center;
+}
 .Destination-img div{
     display: flex;
     gap: 15px;
@@ -32,11 +119,99 @@ main {
     width: 100%;
 }
 
-.Newsletter {
+
+.Choose-Us {
+    text-align: center;
+    
+}
+
+.card {
     display: flex;
+    gap: 20px;
+}
+.Hotel, .Service, .Guarantee {
+    border-radius: 10px;
+    padding: 30px;
+    width: calc(50% - 15px);
+
+}
+.Hotel {
+    background-color: #fffbf7;
+    border: 1px solid #fed8c5;
+}
+
+.Service {
+    background-color: #f4fcfe;
+    border: 1px solid #8de8ff;
+}
+
+.Guarantee {
+    margin: 0 auto;
+    background-color: #fef5f5;
+    border: 1px solid #febfbf;
+    margin-top: 20px;
+}
+
+.Newsletter {
+    height: 100%;
+    /* width: 100%; */
+    margin: 100px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.N-form {
+    border: 3px solid var(--p-coolor);
+    border-radius: 10px;
+    padding: 0 30px 30px 30px;
+}
+
+.N-form input {
+    display: block;
+    background-color: rgb(244, 242, 242);
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.N-form button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.N-pic {
+    position: relative;
+}
+
+.N-pic button {
+    font-size: 2rem;
+    rotate: -30deg;
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+
+
+
 }
 
 footer {
     background-color: #f3f3f3;
     text-align: center;
+    padding: 100px 20%;
+    /* justify-content: center; */
+}
+
+footer h1, footer div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.saad {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    
 }
