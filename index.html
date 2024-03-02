@@ -6,12 +6,15 @@
     <title>Tourism Club</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <nav>
             <h1><img src="Images/Group 40071 (2).png">  Tourism <span>Club</span></h1>
-            <ul>
+            <a id="hamburger" href=""><i class="fa fa-bars"></i></a>
+            <ul class="menu">
                 <a href="">
                     <li>Home</li>
                 </a>
@@ -37,7 +40,7 @@
                     <input type="text" placeholder="Where go">
                     <input type="text" placeholder="When">
                     <input type="text" placeholder="Select Type">
-                    <button>Find Now</button>
+                    <button><i class="fi fi-rr-search"></i> Find Now</button>
                 </div>
             </div>
         </div>
@@ -72,17 +75,38 @@
             <div>
                 <div class="Destination-img">
                     <div>
-                        <img src="Images/Rectangle 5.png">
-                        <img src="Images/Rectangle 8.png">
+                        <div class="d-i-text">
+                            <img src="Images/Rectangle 5.png">
+                            <h2>Maldives</h2>
+                        </div>
+                        <div class="d-i-text">
+                            <img src="Images/Rectangle 8.png">
+                            <h2>Indonesia</h2>
+                        </div>
                     </div>
                     <div>
-                        <img src="Images/Rectangle 6.png">
-                        <img src="Images/Rectangle 7.png">
-                        <img src="Images/Rectangle 9.png">
+                        <div class="d-i-text">
+                            <img src="Images/Rectangle 6.png">
+                            <h2>Srilanka</h2>
+                        </div>
+                        <div class="d-i-text">
+                            <img src="Images/Rectangle 7.png">
+                            <h2>North America</h2>
+                        </div>
+                        <div class="d-i-text">
+                            <img src="Images/Rectangle 9.png">
+                            <h2>Kashmir</h2>
+                        </div>
                     </div>
                     <div>
-                        <img src="Images/Rectangle 11.png">
-                        <img src="Images/Rectangle 10.png">
+                        <div class="d-i-text">
+                            <img src="Images/Rectangle 11.png">
+                            <h2>Bangladesh</h2>
+                        </div>
+                        <div class="d-i-text">
+                            <img src="Images/Rectangle 10.png">
+                            <h2>Bandarban</h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,22 +115,24 @@
         <!-- --------Choose Us------- -->
 
         <section class="Choose-Us">
-            <h1>Why Choose Us</h1>
+            <div class="Choose-title">
+                <h1>Why Choose Us</h1>
             <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. <br> Sodales dictumst nec nibh pellentesque.</p>
+            </div>
             <div class="card">
                 <div class="Hotel">
-                    <img src="">
+                    <img src="Images/5-stars.png">
                     <h3>Handpicked Hotels</h3>
                     <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
                 </div>
                 <div class="Service">
-                    <img src="">
+                    <img src="Images/destination.png">
                     <h3>World Class Service</h3>
                     <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
                 </div>
             </div>
             <div class="Guarantee">
-                <img src="">
+                <img src="Images/best-price.png">
                 <h3>Best Price Guarantee</h3>
                 <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
             </div>

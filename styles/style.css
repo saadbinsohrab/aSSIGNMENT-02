@@ -2,10 +2,6 @@
     --p-coolor: #FF5400;
 }
 
-* {
-
-}
-
 h1{
     font-size: 3rem;
     margin: 15px 0;
@@ -38,6 +34,10 @@ nav span {
     color: var(--p-coolor);
 }
 
+#hamburger {
+    display: none;
+}
+
 nav, nav ul,  nav a {
     display: flex;
     gap: 30px;
@@ -45,9 +45,6 @@ nav, nav ul,  nav a {
     text-decoration: none;
     justify-content: space-between;
     align-items: center;
-}
-
-nav ul, nav a {
 }
 
 .banner {
@@ -65,21 +62,23 @@ nav ul, nav a {
 }
 .banner-title {
     font-size: 5rem;
-    margin: 30px 0;
+    margin: 15px 0;
 }
 
 .banner-describe {
     color: white;
 }
 
+.b-text div {
+    display: flex;
+    justify-content: center;
+}
 .banner input {
     font-size: 1rem;
-    /* font-weight: bold; */
     color: white;
-    /* background-color: var(--p-coolor); */
     border: 0;
     padding: 20px 35px;
-    margin: 0 5px;
+    margin: 5px 5px;
     border-radius: 10px;
 }
 
@@ -108,21 +107,37 @@ main {
 }
 
 .Destination {
+    margin: 0 auto;
+    /* width: 80%; */
     text-align: center;
 }
-.Destination-img div{
+.Destination-img > div{
     display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 35px;
+    margin-bottom: 35px;
+    /* width: 80%; */
 }
-.Destination-img img{
+
+.d-i-text {
+    position: relative;
     width: 100%;
 }
 
 
-.Choose-Us {
+.d-i-text h2 {
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+}
+
+.Choose-title {
     text-align: center;
-    
+}
+
+.Choose-Us img {
+    width: 100px;
+    height: 100px;
 }
 
 .card {
@@ -189,18 +204,14 @@ main {
     font-size: 2rem;
     rotate: -30deg;
     position: absolute;
-    bottom: 100px;
-    right: 20px;
-
-
-
+    bottom: 25%;
+    right: 5%;
 }
 
 footer {
     background-color: #f3f3f3;
     text-align: center;
     padding: 100px 20%;
-    /* justify-content: center; */
 }
 
 footer h1, footer div {
@@ -208,10 +219,67 @@ footer h1, footer div {
     gap: 10px;
     justify-content: center;
 }
-.saad {
-    display: none;
-}
 
 @media screen and (max-width: 600px) {
+    *{
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+    .menu {
+        
+        display: none;
+        background-color: lightgrey;
+        border-radius: 5px;
+        padding: 0;
+    }
+    .menu li {
+        color: black;
+    }
     
+    #hamburger {
+        display: block;
+    }
+    #hamburger:hover + .menu {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 50px;
+    }
+
+    .b-text {
+        margin: 0 auto;
+        width: 70%;
+        padding-top: 100px;
+    }
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .banner-describe {
+        font-size: 1rem;
+    }
+
+    .Destination-img img{
+        height: 100%;
+        width: 100%;
+        /* position: relative; */
+    }
+
+    .Hotel, .Service, .Guarantee {
+        width: 80%;    
+    }
+
+    .N-pic button {
+        width: 60%;
+        font-size: large;
+    }
+
+    nav h1, footer h1, footer div {
+        flex-direction: row;
+    }
 }
